@@ -1,0 +1,133 @@
+h1 {
+	font-size: 100px;
+	margin: 20px;
+	padding: 30px;
+	text-align: center;
+	margin-left: 100px;
+}
+
+h2 {
+	margin: 0px;
+	flex-direction: column;
+	font: 2rem "fantasy;", sans-serif;
+	font-weight: bold;
+	margin-left: 300px;
+}
+
+.horizontal-h2 {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.horizontal-h2 h2 {
+    margin: 0; 
+}
+
+body {
+	font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+h3, h4 {
+	font-size: 40px;
+	text-align: center;
+	color: white;
+}
+
+p {
+	font-size: 50px;
+	text-align: center;
+	font-family: initial;
+	color: red;
+}
+
+.control {
+	font-size: 20px;
+}
+
+#navbar {
+	background-color: #333;
+	color: red;
+	height: 350px;
+	text-align: center;
+	font-size: 30px;
+}
+
+#main-content{
+	background-color: white;
+	height: calc(100vh - 150px);
+	color: beige;
+	display: flex;
+}
+
+
+.sidebar {
+	width: 500px;
+	height: 100%;
+	background-color: orange;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+button {
+    padding: 30px 40px; 
+    font-size: 1.5rem;    
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s ease;
+    width: 150px; 
+    text-align: center;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+}
+
+button:active {
+    background-color: #1e7e34;
+    transform: translateY(0);
+}
+
+
+#btnReset {
+    background-color: #dc3545;
+}
+
+#btnReset:hover {
+    background-color: #c82333;
+}
+
+#btnReset:active {
+    background-color: #bd2130;
+}
+
+.content {
+	flex: 1;
+}
+
+@media (max-width: 800px) {
+	.sidebar {
+		background-color: darkgreen;
+	}
+
+@media (max-width: 600px) {
+	.sidebar {
+		background-color: pink;
+	}
+}
